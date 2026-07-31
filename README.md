@@ -16,24 +16,13 @@ develop and evaluate the approach.
 
 ---
 
-## Case study
-
-The approach is evaluated on an official
-[buildingSMART International sample test file](https://github.com/buildingSMART/Sample-Test-Files)
-— a partially modeled single-storey residential house. The metadata was extended
-to define an intervention scenario: constructing the missing outer north wall and
-an attached column that bound the living-room area.
-
-From this enriched model, both a **configuration** model (mapped IFC spatial
-hierarchy) and a **flow** model (the 4D intervention plan) were built in ADOxx.
-
 ## Repository contents
 
 | Path | Description |
 | --- | --- |
 | `CoPModL_IFC.abl` | ADOxx library (`.abl`) defining the CoPModL-IFC DSML. Import it into ADOxx to obtain the Flow and IFC Product Hierarchy model-types. |
-| `dataset/Building-Architecture.ifc` | Original reference dataset from buildingSMART International. |
-| `dataset/Building-Architecture_modified.ifc` | Adapted version used for the case-study scenario (renamed objects, added property sets and `IfcTask` interventions). |
+| `dataset/Building-Architecture.ifc` | BIM project from [buildingSMART International sample test file](https://github.com/buildingSMART/Sample-Test-Files). |
+| `dataset/Building-Architecture_modified.ifc` | Extended version used for the case-study scenario (renamed objects, added property sets and `IfcTask` interventions). |
 | `3d-objects/Outer_wall - North.ply` | Outer north wall object extracted from the reference project using [Bonsai BIM](https://bonsaibim.org/). |
 | `library-models/` | Example ADOxx models built on the CoPModL-IFC library *(in progress)*. |
 | `LICENSE` | MIT license. |
@@ -73,18 +62,8 @@ If you use this work, please cite the accompanying paper:
 }
 ```
 
-## Authors
-
-Jesús Muñoz-Cádiz, Gunakar Challa, Simon Curty, and Hans-Georg Fill —
-Research Group Digitalization and Information Systems, University of Fribourg,
-Switzerland.
-
 ## Acknowledgments
 
 This work was supported by the
 [Smart Living Lab](https://www.smartlivinglab.ch/en/), funded by the University
 of Fribourg, EPFL, and HEIA-FR.
-
-## License
-
-Released under the MIT License. See [`LICENSE`](LICENSE) for details.
